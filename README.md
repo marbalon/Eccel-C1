@@ -15,7 +15,7 @@ The library comes with two examples in File > Examples > Eccel-C1
 
 ## Compatible Hardware
 
-This library can be used with any C1 family product over UART connection. 
+This library can be used with any C1 family product over UART connection. The recommended board is ESP32 based because examples use printf function and 2 hardware UARTS. But user can easily remove some lines to make it work on any hardware.
 
 ## License
 Read LICENSE.txt for further informations on licensing terms.
