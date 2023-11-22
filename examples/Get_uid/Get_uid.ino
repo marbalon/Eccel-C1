@@ -2,6 +2,11 @@
 #include <HardwareSerial.h>
 #include "C1_Interface.h"
 
+#define RXD1 3
+#define TXD1 1
+#define RXD2 16
+#define TXD2 17
+
 HardwareSerial SerialPort(0); // logs
 HardwareSerial SerialPort2(2); // C1 connection
 
@@ -24,8 +29,8 @@ void ckeck_status(uint16_t status)
 
 void setup()  
 {
-  SerialPort.begin(115200, SERIAL_8N1, 3, 1); 
-  SerialPort2.begin(115200, SERIAL_8N1, 17, 16); 
+  SerialPort.begin(115200, SERIAL_8N1, RXD1, TXD1); 
+  SerialPort2.begin(115200, SERIAL_8N1, RXD2, TXD2); 
 }
 
 void loop() {
