@@ -16,7 +16,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "ccittcrc.h"
+#include "CCITTCRC.h"
 #include <time.h>
 #include "binary_protocol.h"
 
